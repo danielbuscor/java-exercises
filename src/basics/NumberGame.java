@@ -26,7 +26,7 @@ public class NumberGame {
                 userAttempts--;
                 System.out.println("Too high! " + userAttempts + " attempts remaining");
                 userNum = scanner.nextInt();
-            } else if (userNum < randomNum) {
+            } else if (userNum < randomNum){
                 userAttempts--;
                 System.out.println("Too low! " + userAttempts + " attempts remaining.");
                 userNum = scanner.nextInt();
