@@ -10,6 +10,18 @@ public class NumberGame {
         System.out.println("Please enter a number between 1 - 100");
         int userNum = scanner.nextInt();
         while (userNum != randomNum && userAttempts > 0){
+            // Input validation
+            if (!scanner.hasNextInt()){
+                System.out.println("Invalid input! Please enter a number.");
+                scanner.next();
+                continue;
+            }
+            // Range check
+            if (userNum < 1 || userNum > 100){
+                System.out.println("Please enter a number between 1-100");
+                continue;
+            }
+            // comparison logic
             if (userNum > randomNum){
                 userAttempts--;
                 System.out.println("Too high! " + userAttempts + " attempts remaining");
