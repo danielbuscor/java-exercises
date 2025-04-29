@@ -11,7 +11,7 @@ public class NumberGame {
         int userNum = scanner.nextInt();
         while (userNum != randomNum && userAttempts > 0){
             // Input validation
-            if (!scanner.hasNextInt()){
+            if (!scanner.hasNextInt()){//this line checks if the scanner is an integer
                 System.out.println("Invalid input! Please enter a number.");
                 scanner.next();
                 continue;
@@ -37,6 +37,6 @@ public class NumberGame {
         } else {
             System.out.println("Game over! The number was " + randomNum);
         }
-
+        scanner.close();//It is a good practice to close the scanner for resource management
     }
 }
