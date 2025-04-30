@@ -8,9 +8,7 @@ public class TemperatureConverter {
         int userOption = 0;
         double celsius = 0;
         double fahrenheit = 0;
-        System.out.println("Please select an option: ");
-        System.out.println("Press 1 for Celsius to Fahrenheit");
-        System.out.println("Press 2 for Fahrenheit to Celsius");
+        System.out.println("Please select an option: \n1. Celsius to Fahrenheit\n2. Fahrenheit to Celsius");
         userOption = scanner.nextInt();
         if (userOption == 1){
             System.out.println("Please enter the Celsius degrees you want to convert");
