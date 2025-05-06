@@ -6,26 +6,26 @@ public class SimpleCalculator {
     public static void main(String[] args) {
         try(Scanner scanner = new Scanner(System.in)){
             System.out.println("Enter first number:");
-            double firstNumber = scanner.nextDouble();
+            double num1 = scanner.nextDouble();
             scanner.nextLine();
             System.out.println("Enter operator:");
             String operator = scanner.nextLine();
             System.out.println("Enter second number:");
-            double secondNumber = scanner.nextDouble();
+            double num2 = scanner.nextDouble();
             double result = 0;
             switch (operator){
                 case "+":
-                    result = (firstNumber + secondNumber);
+                    result = (num1 + num2);
                     break;
                 case "-":
-                    result = (firstNumber - secondNumber);
+                    result = (num1 - num2);
                     break;
                 case "*":
-                    result = (firstNumber * secondNumber);
+                    result = (num1 * num2);
                     break;
                 case "/":
-                    if (secondNumber != 0){
-                        result = (firstNumber / secondNumber);
+                    if (num2 != 0){
+                        result = (num1 / num2);
                     }else {
                         System.out.println("Cannot divide by 0");
                     }
