@@ -23,7 +23,7 @@ public class Student {
     }
 
     public void displayInformation() {
-        System.out.println("********************");
+        System.out.println("*********************");
         System.out.println("Student name: " + this.name +
                 "\nAge: " + this.age +
                 "\nGrade: " + this.grade +
